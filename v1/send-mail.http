@@ -1,0 +1,54 @@
+### prueba 1 de correo exitoso
+POST  http://localhost/api/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+    "name": "Juan",
+    "email": "gerente@gmail.com",
+    "message": "Necesito ayuda" 
+}
+
+
+### prueba 1 de correo con algun dato faltante 
+POST  http://localhost/api/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+    "name": "Juan",
+    "email": "gerente@gmail.com",
+}
+
+### prueba 1 de correo con algun dato faltante (en blanco)
+POST  http://localhost/api/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+    "name": "",
+    "email": "gerente@gmail.com",
+    "message":"lalla"
+}
+
+### prueba 2 de correo con email erroneo
+POST  http://localhost/api/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+    "name": "Juan",
+    "email": "gerente",
+    "message":"lalala"
+}
+
+### prueba 3 todos los datos faltantes
+POST  http://localhost/api/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+    "name": "",
+    "email": "",
+    "message":""
+}
+
+### prueba 3 todos los datos faltantes
+POST  http://localhost/api/v1/endpoint-webservice/
+Content-Type: "application/json"
+
